@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: #262222;
+    }
+
+    .main {
+      display: flex;
+      flex: 1;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px;
+    }
+
+    .text {
+      font-size: 100px;
+      font-weight: bold;
+      color: #ece2ad;
+      margin-left: 50px;
+    }
+
+    .image img {
+      max-width: 400px;
+      height: 400px;
+      width: 600px;
+      object-fit: cover;
+      margin-right: 50px;
+      border-radius: 500px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+     
+    .buttons {
+      text-align: center;
+      padding: 20px;
+      background: #2d2d29;
+      position: sticky;
+      bottom: 0;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    }
+
+    .buttons a {
+      margin: 10px;
+      padding: 12px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 25px;
+      background-color: #272724;
+      color: rgb(238, 229, 229);
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+
+    .buttons a:hover {
+      background-color: #e3c057;
+    }
+    
+
+    @media (max-width: 768px) {
+      .main {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .image img {
+        max-width: 90%;
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main">
+    <div class="text">Welcome <br>to My Profile</div>
+    <div class="image">
+      <img src="C:\Users\Ritu Sisodiya\OneDrive\Pictures\me.jpg" alt="Profile Image">
+    </div>
+  </div>
+
+  <div class="buttons">
+    <a href="about.html">About</a>
+    <a href="education.html">Education</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="certificate.html">Certificates</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</body>
+</html>
